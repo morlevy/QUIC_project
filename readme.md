@@ -6,3 +6,5 @@ documenting1 is about several attacks in "Revisiting QUIC attacks: A comprehensi
 and a hands-on study." 
 
 "Version Negotiation packets have no cryptographic protection" therefore we can do downgarde attack on the connection.
+
+"Retry packets use a fixed key and so similarly lack confidentiality and integrity protection." (RFC 9001)
