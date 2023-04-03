@@ -4,3 +4,5 @@ quic packets:  https://blogs.keysight.com/blogs/tech/nwvs.entry.html/2021/07/17/
 
 documenting1 is about several attacks in "Revisiting QUIC attacks: A comprehensive review on QUIC security
 and a hands-on study." 
+
+"Version Negotiation packets have no cryptographic protection" therefore we can do downgarde attack on the connection.
