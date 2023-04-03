@@ -13,3 +13,8 @@ and a hands-on study."
 salt of 0x38762cf7f55934b34d179ae6a4c80cadccbb7f0a and the input keying material (IKM)
 of the Destination Connection ID field. This produces an intermediate pseudorandom key (PRK)
 that is used to derive two separate secrets for sending and receiving." (RFC 9001) this is a pseudorandom key so we could reproduce it.
+
+
+<img width="1078" alt="Screenshot 2023-04-03 at 19 25 51" src="https://user-images.githubusercontent.com/84244797/229570311-055ef52b-d9a9-4ad3-ba58-272d43ca1e1d.png">
+
+
