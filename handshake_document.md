@@ -9,3 +9,42 @@
 
 It carries the first CRYPTO frames sent by the client and server to
 perform key exchange, and it carries ACK frames in either direction.
+
+
+Client                                                    Server
+======                                                    ======
+
+Get Handshake
+                     Initial ------------->
+Install tx 0-RTT keys
+                     0-RTT - - - - - - - ->
+
+                                              Handshake Received
+                                                   Get Handshake
+                     <------------- Initial
+                                           Install rx 0-RTT keys
+                                          Install Handshake keys
+                                                   Get Handshake
+                     <----------- Handshake
+                                           Install tx 1-RTT keys
+                     <- - - - - - - - 1-RTT
+
+Handshake Received (Initial)
+Install Handshake keys
+Handshake Received (Handshake)
+Get Handshake
+                     Handshake ----------->
+Handshake Complete
+Install 1-RTT keys
+                     1-RTT - - - - - - - ->
+
+                                              Handshake Received
+                                              Handshake Complete
+                                             Handshake Confirmed
+                                           Install rx 1-RTT keys
+                     <--------------- 1-RTT
+                           (HANDSHAKE_DONE)
+Handshake Confirmed
+
+
+solid arrows indicate packets that carry handshake data; dashed arrows show where application data can be sent. Each arrow is tagged with the encryption level used for that transmission.
