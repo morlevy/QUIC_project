@@ -18,7 +18,6 @@ Get Handshake
                      Initial ------------->
 Install tx 0-RTT keys
                      0-RTT - - - - - - - ->
-
                                               Handshake Received
                                                    Get Handshake
                      <------------- Initial
@@ -37,7 +36,6 @@ Get Handshake
 Handshake Complete
 Install 1-RTT keys
                      1-RTT - - - - - - - ->
-
                                               Handshake Received
                                               Handshake Complete
                                              Handshake Confirmed
