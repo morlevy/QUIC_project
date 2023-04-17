@@ -20,3 +20,8 @@ that is used to derive two separate secrets for sending and receiving." (RFC 900
 <img width="1078" alt="Screenshot 2023-04-03 at 19 25 51" src="https://user-images.githubusercontent.com/84244797/229570311-055ef52b-d9a9-4ad3-ba58-272d43ca1e1d.png">
 
 "The secrets used for constructing subsequent Initial packets change when a server sends a Retry packet to use the connection ID value selected by the server." maybe we can replay attack with known cid or manipulate the new cid.
+
+
+**נקודות מעניינות לקריאה**
+
+-read about reset frames, The article notes that these packages are not properly authenticated.
