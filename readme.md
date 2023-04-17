@@ -24,4 +24,4 @@ that is used to derive two separate secrets for sending and receiving." (RFC 900
 
 **נקודות מעניינות לקריאה**
 
--read about reset frames, The article notes that these packages are not properly authenticated.
+-read about reset frames, The article notes that these packages are not properly authenticated (puclicReset of gQUIC).
